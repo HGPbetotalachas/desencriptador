@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador Alura Ch</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor">
+    <header>
+        <h1>
+            <img src="img/logo.png">
+        </h1>
+    </header>
+    <main>
+    <div class="rectangulo">
+        <img src="img/rectangulo.png">
+       
+        <div class="contenedorResultado">
+            <label class="lblResultado" id="txtRes"></label>
+            <div class="contenedorMuñeco">
+             <img src="img/figMuñeco.png" alt="" id="figMuñeco">
+             <p id="txtSincontenido">No se ha encontrado nada para encriptar</p>
+             <button class="btns" id="btnCopiar" onclick="Copiar()">Copiar</button>
+            </div>
+        </div>
+        
+    </div>
+    <form class="form">
+        <input type="text" id="txtFrase" placeholder="Introduce la oración aquí" pattern="[a-z]" onkeyup="javascript:this.value=this.value.toLowerCase();" >
+    </form>
+    <div class="contenedorAviso">
+        <img src="img/aviso.png">
+        <p class="avisoMinus">Solo letras minusculas sin acento</p>
+    </div>
+    <div class="contenedorBotones">
+        <button class="btns" id="btnEncriptador" onclick="Encriptar()">Encriptar</button>
+        <button class="btns" id="btnDesencriptador" onclick="Desencriptar()">Desencriptar</button>
+    </div> 
+    <script src="scripts.js"></script>
+</main>
+</div>
+</body>
+</html>
