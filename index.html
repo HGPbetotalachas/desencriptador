@@ -20,22 +20,23 @@
         </h1>
     </header>
     <main>
+        <form class="form">
+            <input type="text" id="txtFrase" placeholder="Introduce la oración aquí" pattern="[a-z]" onkeyup="javascript:this.value=this.value.toLowerCase();" >
+        </form>   
     <div class="rectangulo">
-        <img src="img/rectangulo.png">
+        <img src="img/rectangulo.png" id="imgRect">
        
         <div class="contenedorResultado">
             <label class="lblResultado" id="txtRes"></label>
             <div class="contenedorMuñeco">
              <img src="img/figMuñeco.png" alt="" id="figMuñeco">
              <p id="txtSincontenido">No se ha encontrado nada para encriptar</p>
-             <button class="btns" id="btnCopiar" onclick="Copiar()">Copiar</button>
             </div>
+           
         </div>
-        
+        <button class="btns" id="btnCopiar" onclick="Copiar()">Copiar</button>
     </div>
-    <form class="form">
-        <input type="text" id="txtFrase" placeholder="Introduce la oración aquí" pattern="[a-z]" onkeyup="javascript:this.value=this.value.toLowerCase();" >
-    </form>
+    
     <div class="contenedorAviso">
         <img src="img/aviso.png">
         <p class="avisoMinus">Solo letras minusculas sin acento</p>
